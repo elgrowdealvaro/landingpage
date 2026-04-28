@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Growdrive — Agenda reuniones calificadas en automático</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="#" class="site-header__brand" aria-label="Growdrive home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 51 47" fill="none">
+          <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
+        </svg>
+      </span>
+      <span class="logo-word" style="font-size:22px">GROWDRIVE</span>
+    </a>
+
+    <nav class="site-header__nav" aria-label="Principal">
+      <a href="#how" class="nav-link">¿Cómo funciona?</a>
+      <a href="#pricing" class="nav-link">Precios</a>
+      <a href="#cases" class="nav-link">Casos de éxito</a>
+    </nav>
+
+    <a href="#cta" class="btn btn--primary btn--sm">Agendar demo</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__pill-wrap">
+      <span class="pill">
+        <span class="pill__dot"></span>
+        Infraestructura outbound todo en uno
+      </span>
+    </div>
+
+    <h1 class="h-display hero__title">
+      Agenda reuniones calificadas en automático,<br>
+      <span class="accent">sin SDRs ni agencias.</span>
+    </h1>
+
+    <p class="hero__lead">
+      Llegamos a tus clientes ideales con un sistema de outbound predecible.<br>
+      Infraestructura, IA y datos — todo en un solo lugar.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="#cta" class="btn btn--primary">
+        Inicia ahora
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+      <a href="#how" class="btn btn--ghost">Agenda una demo</a>
+    </div>
+
+    <div class="hero__mock">
+      <div class="placeholder placeholder--hero" data-label="Dashboard preview"></div>
+    </div>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="container container-narrow problem__inner">
+    <div class="problem__copy">
+      <span class="pill">Conocemos el problema</span>
+
+      <h2 class="h-display-2" style="margin-top:20px;color:#0B2731">
+        Contratas, entrenas… y el pipeline <span style="color:#07CD72">sigue sin crecer.</span>
+      </h2>
+
+      <p class="problem__lead">
+        Contratar equipos es lento, procesos manuales y alcance inconsistente
+        generan más esfuerzo… y el pipeline sigue vacío.
+      </p>
+
+      <div class="problem__cards">
+        <article class="card problem__card">
+          <span class="problem__card-ic" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </span>
+          <span class="problem__card-text">
+            <span class="t">Equipos de SDRs</span>
+            <span class="d">Lentos, caros y difíciles de escalar.<br>Alta rotación y resultados inconsistentes.</span>
+          </span>
+        </article>
+
+        <article class="card problem__card">
+          <span class="problem__card-ic" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="1"/>
+              <line x1="9"  y1="6"  x2="9"  y2="6.01"/>
+              <line x1="15" y1="6"  x2="15" y2="6.01"/>
+              <line x1="9"  y1="10" x2="9"  y2="10.01"/>
+              <line x1="15" y1="10" x2="15" y2="10.01"/>
+              <line x1="10" y1="22" x2="10" y2="18"/>
+              <line x1="14" y1="22" x2="14" y2="18"/>
+            </svg>
+          </span>
+          <span class="problem__card-text">
+            <span class="t">Agencias</span>
+            <span class="d">Procesos opacos, poca personalización<br>y cero control para tu equipo</span>
+          </span>
+        </article>
+
+        <article class="card problem__card">
+          <span class="problem__card-ic" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.06 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/>
+              <line x1="22" y1="2" x2="14" y2="10"/>
+              <line x1="14" y1="2" x2="22" y2="10"/>
+            </svg>
+          </span>
+          <span class="problem__card-text">
+            <span class="t">Alcance manual</span>
+            <span class="d">Te consume tiempo, es difícil de escalar<br>y los resultados no son predecibles</span>
+          </span>
+        </article>
+      </div>
+    </div>
+
+    <div class="problem__visual">
+      <div class="problem__photo">
+        <div class="placeholder placeholder--problem" data-label="Foto: persona preocupada"></div>
+      </div>
+
+      <div class="card problem__stat problem__stat--1">
+        <div class="problem__stat-row">
+          <span style="color:#fff;font-weight:900">Respuestas</span>
+        </div>
+        <div class="problem__stat-num">2%</div>
+        <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:6px">Tasa de respuesta</div>
+        <div class="problem__stat-bar"><span style="width:15%"></span></div>
+      </div>
+
+      <div class="card problem__stat problem__stat--2">
+        <div class="problem__stat-row">
+          <span style="color:#fff;font-weight:900">Reuniones calificadas</span>
+        </div>
+        <div class="problem__stat-num">3%</div>
+        <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:6px">Este mes</div>
+        <svg viewBox="0 0 160 30" style="margin-top:12px;width:100%;height:28px" aria-hidden="true">
+          <polyline points="0,5 30,8 60,12 90,18 130,22 160,26" fill="none" stroke="#FF5252" stroke-width="2"/>
+          <circle cx="160" cy="26" r="2.5" fill="#FF5252"/>
+        </svg>
+      </div>
+
+      <div class="card" style="position:absolute;right:24px;bottom:24px;padding:16px;display:flex;align-items:center;gap:12px;max-width:300px">
+        <span style="flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:2px solid #FF5252;color:#FF5252">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </span>
+        <span style="color:#fff;font-size:13px;font-weight:900;line-height:1.3">
+          Más herramientas. Más procesos.<br>Mismos resultados
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pipeline">
+  <div class="container">
+    <div class="card pipeline__box">
+      <div class="pipeline__pill-wrap">
+        <span class="pill">Por eso creamos Growdrive</span>
+      </div>
+
+      <h2 class="h-display-2 pipeline__heading">
+        Infraestructura de pipeline<br>
+        <span style="color:#07CD72">que convierte esfuerzos en reuniones.</span>
+      </h2>
+
+      <div class="pipeline__grid">
+        <!-- left: ENTRADAS -->
+        <div class="pipeline__col" style="align-items:center">
+          <div class="pipeline__col-label">ENTRADAS</div>
+          <div style="position:relative;width:200px;height:240px" aria-hidden="true">
+            <svg viewBox="0 0 200 240" fill="none" style="position:absolute;inset:0;width:100%;height:100%">
+              <!-- líneas curvas conectando íconos al centro derecha -->
+              <path d="M 30,40 C 110,40 150,100 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 30,90 C 110,90 150,110 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 30,140 C 110,140 150,125 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 30,200 C 110,200 150,150 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 90,20  C 130,40 170,90 200,120"   stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 100,60 C 140,80 170,110 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+              <path d="M 110,180 C 140,160 170,140 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
+            </svg>
+            <!-- íconos en columna izquierda -->
+            <span style="position:absolute;left:0;top:24px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg>
+            </span>
+            <span style="position:absolute;left:0;top:74px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+            </span>
+            <span style="position:absolute;left:0;top:124px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </span>
+            <span style="position:absolute;left:0;top:184px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/><circle cx="6"  cy="18" r="3"/><circle cx="18" cy="18" r="3"/></svg>
+            </span>
+            <span style="position:absolute;left:60px;top:64px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5"  rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+            </span>
+            <span style="position:absolute;left:60px;top:124px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2"  x2="8"  y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </span>
+            <span style="position:absolute;left:60px;top:0;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+            </span>
+          </div>
+          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
+            Múltiples canales, cuentas y dominios gestionados para máxima entregabilidad.
+          </p>
+        </div>
+
+        <!-- center: SISTEMA GROWDRIVE -->
+        <div class="pipeline__center">
+          <div class="pipeline__col-label" style="margin-bottom:8px">SISTEMA<br>GROWDRIVE</div>
+          <div class="pipeline__orb">
+            <svg width="84" height="76" viewBox="0 0 51 47" fill="none" aria-hidden="true">
+              <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
+              <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
+              <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
+            </svg>
+          </div>
+          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
+            IA + Datos + Automatización +<br>Warm-up trabajando en conjunto.
+          </p>
+        </div>
+
+        <!-- right: INTELIGENCIA DE PIPELINE -->
+        <div class="pipeline__col" style="align-items:flex-end">
+          <div class="pipeline__col-label">INTELIGENCIA DE<br>PIPELINE</div>
+          <div style="position:relative;width:100%;display:flex;justify-content:center">
+            <!-- flecha desde el centro -->
+            <svg viewBox="0 0 120 40" style="position:absolute;left:-100px;top:80px;width:120px;height:40px" aria-hidden="true">
+              <line x1="0" y1="20" x2="105" y2="20" stroke="#07D577" stroke-width="2"/>
+              <polyline points="100,12 110,20 100,28" fill="none" stroke="#07D577" stroke-width="2"/>
+            </svg>
+            <div class="card" style="padding:16px;width:240px">
+              <div style="color:#fff;font-size:12px;font-weight:900">Pipeline proyectado</div>
+              <div style="color:var(--gray-1);font-size:10px;font-weight:400">(prox. 30 días)</div>
+              <div style="color:var(--green-bright);font-size:30px;font-weight:900;font-family:Arial,sans-serif;margin-top:8px;line-height:1">US$198k</div>
+              <div style="color:var(--green-bright);font-size:10px;font-weight:900;letter-spacing:.05em;margin-top:4px">▲ +89% +31% VS ACTUAL</div>
+              <div style="display:flex;align-items:flex-end;gap:6px;margin-top:14px;height:60px">
+                <span class="bar" style="height:14px"></span>
+                <span class="bar" style="height:18px"></span>
+                <span class="bar" style="height:22px"></span>
+                <span class="bar" style="height:18px"></span>
+                <span class="bar" style="height:30px"></span>
+                <span class="bar" style="height:34px"></span>
+                <span class="bar" style="height:40px"></span>
+                <span class="bar" style="height:38px"></span>
+                <span class="bar" style="height:48px"></span>
+                <span class="bar" style="height:54px"></span>
+              </div>
+            </div>
+          </div>
+          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
+            Reuniones calificadas en tu calendario. Dashboards claros para tomar mejores decisiones y predecir resultados
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <div class="features__head">
+      <span class="pill">Lo más importante</span>
+      <h2 class="h-display-2" style="color:#0B2731">
+        Convierte outbound en un sistema,<br>
+        <span style="color:#07CD72">no en esfuerzo manual.</span>
+      </h2>
+      <p>
+        Datos, IA, automatización y deliverability trabajando como un solo sistema. Growdrive reemplaza
+        procesos dispersos con una infraestructura que ejecuta, optimiza y escala automáticamente para
+        generar reuniones calificadas.
+      </p>
+    </div>
+
+    <div class="features__grid">
+      <!-- card 1 — Solo pagas por infraestructura -->
+      <article class="card feature-card">
+        <h3 class="feature-card__title">Solo pagas por infraestructura</h3>
+        <p class="feature-card__sub">Cuentas, dominios y warm-up automático</p>
+        <div style="margin-top:28px;display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;color:#07D577">
+          <!-- 16 íconos alternando calendar / clock -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+      </article>
+
+      <!-- card 2 — IA personalizada (TALL, span 2 rows) -->
+      <article class="card feature-card feature-card--tall">
+        <h3 class="feature-card__title">IA personalizada</h3>
+        <p class="feature-card__sub">Mensajes que suenan 1 a 1,<br>entrenados con tu cliente ideal,<br>tu oferta y tus diferenciadores.</p>
+
+        <div class="email-mock">
+          <div class="email-mock__bar">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>
+            </svg>
+            <div class="email-mock__bar-text">
+              <div class="t1">Mensaje generado por IA</div>
+              <div class="t2">Personalizado para [Nombre prospecto]</div>
+            </div>
+          </div>
+          <div class="email-mock__meta">
+            <div>Para: <strong>luis@empresa.com</strong></div>
+            <div style="margin-top:6px">Asunto: <strong>¿Tu pipeline depende de SDRs?</strong></div>
+          </div>
+          <div class="email-mock__sep"></div>
+          <div class="email-mock__body">
+            Hola Luis,<br><br>
+            Si hoy tu pipeline depende de SDRs o agencias, es normal que sea inconsistente.<br><br>
+            Growdrive reemplaza eso con un sistema que genera reuniones de forma predecible.<br><br>
+            ¿Quieres ver cómo se vería funcionando para [Empresa]?<br><br>
+            —<br>Álvaro<br>Growdrive|
+          </div>
+          <div class="email-mock__sep"></div>
+          <div class="email-mock__tags">
+            <span class="email-mock__tag email-mock__tag--filled">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#0B2731" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 11a4 4 0 1 1-8 0V5a4 4 0 1 1 8 0z"/></svg>
+              Personalizado
+            </span>
+            <span class="email-mock__tag email-mock__tag--outline">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+              Orientado a resultados
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 3 — Reuniones Calificadas -->
+      <article class="card feature-card">
+        <h3 class="feature-card__title">Reuniones<br>Calificadas</h3>
+        <p class="feature-card__sub">No leads, no clicks.<br>Sólo reuniones con decision-<br>makers con el poder de avanzar<br>de la conversación a la venta.</p>
+        <div style="margin-top:32px;display:flex;align-items:center">
+          <span class="placeholder placeholder--avatar" data-label="P1" style="width:54px;height:54px;border:3px solid #0B2A34"></span>
+          <span class="placeholder placeholder--avatar" data-label="P2" style="width:54px;height:54px;border:3px solid #0B2A34;margin-left:-12px;background:#3a4a5a"></span>
+          <span class="placeholder placeholder--avatar" data-label="P3" style="width:54px;height:54px;border:3px solid #0B2A34;margin-left:-12px;background:#5a3a4a"></span>
+          <span class="placeholder placeholder--avatar" data-label="P4" style="width:54px;height:54px;border:3px solid #0B2A34;margin-left:-12px;background:#3a5a4a"></span>
+          <span class="placeholder placeholder--avatar" data-label="P5" style="width:54px;height:54px;border:3px solid #0B2A34;margin-left:-12px;background:#4a4a3a"></span>
+          <span style="width:54px;height:54px;border-radius:50%;background:#062813;border:3px solid #0B2A34;margin-left:-12px;display:grid;place-items:center;color:#07D577;font-size:14px;font-weight:900">+23</span>
+        </div>
+      </article>
+
+      <!-- card 4 — Dominio protegido -->
+      <article class="card feature-card">
+        <h3 class="feature-card__title">Dominio protegido</h3>
+        <p class="feature-card__sub">Reputación blindada y<br>entregabilidad optimizada</p>
+        <div class="feature-card__inset" style="margin-top:32px;padding:20px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="flex:none;width:32px;height:32px;border-radius:8px;display:grid;place-items:center;color:#07D577;border:1px solid rgba(7,213,119,.4)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/><polyline points="9 12 11 14 15 10"/></svg>
+            </span>
+            <div>
+              <span style="color:#fff;font-family:Arial,sans-serif;font-weight:900;font-size:32px">99%</span>
+              <span style="color:#07D577;font-size:11px;font-weight:900;letter-spacing:.15em;margin-left:6px">EXCELENTE</span>
+            </div>
+          </div>
+          <svg viewBox="0 0 220 70" style="width:100%;height:70px;margin-top:14px" aria-hidden="true">
+            <polyline points="0,55 30,52 60,45 90,40 120,32 150,28 180,16 220,8" fill="none" stroke="#12FF00" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="220" cy="8" r="4" fill="#12FF00"/>
+          </svg>
+        </div>
+      </article>
+
+      <!-- card 5 — IA + A/B Testing -->
+      <article class="card feature-card">
+        <h3 class="feature-card__title">IA + A/B Testing</h3>
+        <p class="feature-card__sub">Puedes probar, aprender y<br>escalar lo que funciona.</p>
+        <div style="margin-top:24px">
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding-bottom:12px;font-size:11px;letter-spacing:.1em;font-weight:900;color:var(--gray-2)">
+            <span>VARIANTE</span>
+            <span style="text-align:center">RESPUESTA</span>
+            <span style="text-align:center">REUNIONES</span>
+          </div>
+          <div class="ab__row ab__row--a" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:center">
+            <span style="color:var(--gray-2);font-weight:900">A</span>
+            <span style="color:var(--gray-1);font-weight:900;text-align:center">24.7%</span>
+            <span style="color:var(--gray-1);font-weight:900;text-align:center">36</span>
+          </div>
+          <div class="ab__row ab__row--b" style="margin-top:8px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:center">
+            <span style="color:var(--green-bright);font-weight:900">B</span>
+            <span style="color:#fff;font-weight:900;text-align:center">31.7%</span>
+            <span style="color:#fff;font-weight:900;text-align:center">54</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="how">
+  <div class="container">
+    <div class="process__grid">
+      <div class="process__copy">
+        <span class="pill">Cómo funciona Growdrive</span>
+        <h2 class="h-display-2">
+          Un sistema en<br>
+          <span style="color:#07CD72">6 simples pasos</span>
+        </h2>
+        <p class="process__lead">
+          De la configuración al pipeline, sin fricción. Growdrive convierte tu setup inicial en un sistema
+          que genera pipeline de forma continua: <strong style="color:#0B2731;font-weight:900">Un sistema que ejecuta, optimiza y escala
+          tu outbound de forma predecible.</strong>
+        </p>
+      </div>
+
+      <ol class="process__list" style="list-style:none;padding:0;margin:0">
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">01 — Define tu ICP</div>
+            <p class="process__item-desc">Identificamos a quién contactar y qué decir para generar respuesta desde el primer mensaje.</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">02 — Configura tu infraestructura</div>
+            <p class="process__item-desc">Lo sabemos… suena "complicado" pero para ti, Growdrive activa dominios, cuentas y canales listos para escalar sin afectar entregabilidad. Todo con un click.</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <polyline points="22 6 12 13 2 6"/>
+              <path d="M19 9l1.5-1.5M19 9l1.5 1.5"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">03 — La IA trabaja para ti</div>
+            <p class="process__item-desc">Mensajes personalizados que se adaptan al contexto de cada prospecto y convierten en conversaciones.</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">04 — Lanza tus campañas</div>
+            <p class="process__item-desc">Ejecutamos outreach multicanal optimizado para maximizar respuestas, no solo envíos.</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8"  y1="2" x2="8"  y2="6"/>
+              <line x1="3"  y1="10" x2="21" y2="10"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">05 — Pipeline incremental automático</div>
+            <p class="process__item-desc">Las respuestas calificadas se convierten en reuniones directamente en tu calendario.</p>
+          </div>
+        </li>
+
+        <li class="process__item">
+          <span class="process__item-ic" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+              <polyline points="16 7 22 7 22 13"/>
+            </svg>
+          </span>
+          <div>
+            <div class="process__item-title">06 — Optimiza</div>
+            <p class="process__item-desc">Ajustamos continuamente el sistema para mejorar resultados sin intervención manual.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="market">
+  <div class="container">
+    <!-- Photo collage staggered grid -->
+    <div class="market-collage" style="position:relative;height:560px;margin-bottom:32px">
+      <!-- col 1 (far left) -->
+      <div class="placeholder placeholder--photo"   data-label="Foto 1"  style="position:absolute;left:0;top:160px;width:120px;height:200px"></div>
+      <div class="placeholder placeholder--photo-a" data-label="Foto 2"  style="position:absolute;left:0;top:390px;width:120px;height:140px"></div>
+
+      <!-- col 2 -->
+      <div class="placeholder placeholder--photo-b" data-label="Foto 3"  style="position:absolute;left:140px;top:40px;width:140px;height:240px"></div>
+      <div class="placeholder placeholder--photo-c" data-label="Foto 4"  style="position:absolute;left:140px;top:300px;width:140px;height:160px"></div>
+
+      <!-- col 3 (tall center-left) -->
+      <div class="placeholder placeholder--photo-d" data-label="Foto 5"  style="position:absolute;left:300px;top:120px;width:160px;height:380px"></div>
+
+      <!-- col 4 (top) -->
+      <div class="placeholder placeholder--photo"   data-label="Foto 6"  style="position:absolute;left:480px;top:80px;width:160px;height:260px"></div>
+
+      <!-- col 5 (top center-right) -->
+      <div class="placeholder placeholder--photo-a" data-label="Foto 7"  style="position:absolute;left:660px;top:60px;width:160px;height:320px"></div>
+
+      <!-- col 6 -->
+      <div class="placeholder placeholder--photo-b" data-label="Foto 8"  style="position:absolute;left:840px;top:130px;width:140px;height:160px"></div>
+      <div class="placeholder placeholder--photo-c" data-label="Foto 9"  style="position:absolute;left:840px;top:310px;width:140px;height:160px"></div>
+
+      <!-- col 7 -->
+      <div class="placeholder placeholder--photo-d" data-label="Foto 10" style="position:absolute;left:1000px;top:60px;width:140px;height:240px"></div>
+      <div class="placeholder placeholder--photo"   data-label="Foto 11" style="position:absolute;left:1000px;top:320px;width:140px;height:140px"></div>
+
+      <!-- col 8 (rightmost) -->
+      <div class="placeholder placeholder--photo-a" data-label="Foto 12" style="position:absolute;left:1160px;top:140px;width:120px;height:180px"></div>
+      <div class="placeholder placeholder--photo-b" data-label="Foto 13" style="position:absolute;left:1160px;top:340px;width:120px;height:160px"></div>
+    </div>
+
+    <!-- Centered copy -->
+    <div style="text-align:center">
+      <span class="pill">Nuestro mercado</span>
+      <h2 class="h-display-2" style="color:#0B2731;margin-top:20px">
+        Diseñado <span style="color:#07CD72">para empresas SaaS</span><br>
+        que quieren escalar.
+      </h2>
+      <p style="color:var(--gray-soft);margin-top:16px;max-width:600px;margin-inline:auto;line-height:1.55;font-weight:400">
+        Si ya validaste tu mercado, <span style="color:#07CD72;font-weight:900">Growdrive</span> convierte tu outbound en un<br>
+        sistema predecible de generación de reuniones.
+      </p>
+
+      <div style="color:#0B2731;font-size:15px;font-weight:900;margin-top:32px">Usado por equipos que venden a:</div>
+
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:20px">
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a4 4 0 0 0 5.66 5.66l1.41-1.42a6 6 0 0 1-8.48-8.48l1.41 1.41a4 4 0 0 0 0 2.83zM3 21l8-8"/>
+          </svg>
+          <span class="industry__text">Mantenimiento<br>industrial</span>
+        </span>
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+          <span class="industry__text">Seguridad<br>privada</span>
+        </span>
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+          <span class="industry__text">Distribución<br>industrial</span>
+        </span>
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/>
+            <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+          <span class="industry__text">Instalación de<br>paneles solares</span>
+        </span>
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="6" width="14" height="11"/>
+            <polygon points="15 9 19 9 23 13 23 17 15 17 15 9"/>
+            <circle cx="6" cy="19" r="2"/>
+            <circle cx="18" cy="19" r="2"/>
+          </svg>
+          <span class="industry__text">Flotas<br>especializadas</span>
+        </span>
+        <span class="industry" style="padding:12px 18px;align-items:center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 19H4.8a2 2 0 0 1-1.7-3l3.7-6.4"/>
+            <path d="M11 15l-4 4 4 4"/>
+            <path d="M17 5l3 5 3-5"/>
+            <path d="M14 4.7L12.6 2a2 2 0 0 0-3.4 0L7 6"/>
+            <path d="M20 19l-3-1.7L15 19"/>
+          </svg>
+          <span class="industry__text">Gestión de<br>residuos</span>
+        </span>
+      </div>
+
+      <div style="color:#0B2731;font-size:14px;font-weight:900;margin-top:40px">Solo para equipos B2B en crecimiento</div>
+
+      <a href="#cta" class="btn btn--primary" style="margin-top:20px">
+        Inicia ahora
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="market__testimonials">
+      <article class="testimonial">
+        <div style="display:flex;gap:2px;margin-bottom:16px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+        </div>
+        <p class="testimonial__quote">"Growdrive cambió por completo nuestra forma de generar pipeline. Pasamos de depender de referidos a tener reuniones calificadas todas las semanas."</p>
+        <div class="testimonial__by">
+          <span class="placeholder placeholder--avatar testimonial__avatar" data-label=""></span>
+          <div>
+            <div class="testimonial__name">Andres M.</div>
+            <div class="testimonial__role">CEO, Fintech B2B</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div style="display:flex;gap:2px;margin-bottom:16px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+        </div>
+        <p class="testimonial__quote">"Growdrive cambió por completo nuestra forma de generar pipeline. Pasamos de depender de referidos a tener reuniones calificadas todas las semanas."</p>
+        <div class="testimonial__by">
+          <span class="placeholder placeholder--avatar testimonial__avatar" data-label="" style="background:#3a4a5a"></span>
+          <div>
+            <div class="testimonial__name">Andres M.</div>
+            <div class="testimonial__role">CEO, Fintech B2B</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial">
+        <div style="display:flex;gap:2px;margin-bottom:16px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFC107" stroke="#FFC107" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+        </div>
+        <p class="testimonial__quote">"Growdrive cambió por completo nuestra forma de generar pipeline. Pasamos de depender de referidos a tener reuniones calificadas todas las semanas."</p>
+        <div class="testimonial__by">
+          <span class="placeholder placeholder--avatar testimonial__avatar" data-label="" style="background:#5a3a4a"></span>
+          <div>
+            <div class="testimonial__name">Andres M.</div>
+            <div class="testimonial__role">CEO, Fintech B2B</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="scaling">
+  <div class="container">
+    <div class="card scaling__box">
+      <div class="scaling__bg" aria-hidden="true">
+        <div class="placeholder placeholder--team" data-label="Foto: equipo trabajando"></div>
+      </div>
+
+      <div class="scaling__copy">
+        <span class="pill">
+          <span class="pill__dot"></span>
+          ¿Listo para escalar tu pipeline?
+        </span>
+        <h2 class="h-display-2">
+          Predecible. Escalable.<br>
+          <span style="color:#07CD72">Sin depender de personas.</span>
+        </h2>
+        <p>
+          Agenda una demo y ve como Growdrive puede transformar<br>
+          tu pipeline.
+        </p>
+
+        <div class="scaling__ctas">
+          <a href="#cta" class="btn btn--primary">Agendar una demo</a>
+          <a href="#cta" class="btn btn--ghost">Iniciar Ahora</a>
+        </div>
+
+        <div class="scaling__notes">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Respuesta en &lt;24h
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16.01"/></svg>
+            Sin compromiso.
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12" y2="17.01"/></svg>
+            Solo trabajamos con<br>empresas B2B
+          </span>
+        </div>
+
+        <div class="scaling__features">
+          <div class="scaling__feature">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <span class="scaling__feature-t">Sin contratos forzosos</span>
+            </div>
+            <div class="scaling__feature-d" style="font-weight:400;color:var(--gray-1)">Elije tu plan. Cancela cuando quieras.</div>
+          </div>
+          <div class="scaling__feature">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <span class="scaling__feature-t">Setup ultra rápido</span>
+            </div>
+            <div class="scaling__feature-d" style="font-weight:400;color:var(--gray-1)">7 días o menos</div>
+          </div>
+          <div class="scaling__feature">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span class="scaling__feature-t">Resultados medibles</span>
+            </div>
+            <div class="scaling__feature-d" style="font-weight:400;color:var(--gray-1)">Experimenta, aprende, optimiza, escala.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scaling__quote">
+        <!-- pipeline mini-stat -->
+        <div class="card" style="position:absolute;right:140px;top:120px;padding:16px;width:240px;z-index:3">
+          <div style="color:#fff;font-size:12px;font-weight:900">TU PIPELINE DE VENTAS</div>
+          <div style="color:var(--gray-1);font-size:10px;font-weight:900;letter-spacing:.1em;margin-top:6px">REUNIONES CALIFICADAS</div>
+          <div style="color:#fff;font-size:38px;font-weight:900;font-family:Arial,sans-serif;margin-top:4px;line-height:1">
+            47 <span style="color:#07D577;font-size:14px">▲ +89%</span> <span style="color:var(--gray-1);font-size:9px;font-weight:900">VS MES PASADO</span>
+          </div>
+          <div style="color:var(--gray-1);font-size:10px;font-weight:900;letter-spacing:.1em;margin-top:8px">ÚLTIMOS 30 DÍAS</div>
+        </div>
+
+        <div class="scaling__quote-card">
+          <div class="scaling__quote-mark">"</div>
+          <p class="scaling__quote-text">
+            Pasamos de 2-3 reuniones al mes a más de 20<br>
+            reuniones calificadas de forma consistente<br>
+            gracias a Growdrive.
+          </p>
+          <div class="scaling__quote-by">
+            <span class="placeholder placeholder--avatar" data-label="" style="width:36px;height:36px"></span>
+            <div>
+              <div class="scaling__quote-name">Maria Fernanda S.</div>
+              <div class="scaling__quote-role">HEAD OF GROW</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee de logos -->
+    <div class="marquee-mask" style="margin-top:24px">
+      <div class="marquee-track">
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <!-- duplicado para marquee infinito -->
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+        <div class="card placeholder--logo" style="height:120px;width:240px;display:grid;place-items:center;color:var(--gray-1);font-size:32px;font-weight:900;letter-spacing:.1em">LOGO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <div class="why__head">
+      <span class="pill">Por qué Growdrive</span>
+      <h2 class="h-display-2" style="color:#0B2731">
+        El problema no es el canal.<br>
+        <span style="color:#07CD72">Es el sistema.</span>
+      </h2>
+      <p>
+        La mayoría de equipos intenta escalar con personas o herramientas aisladas.<br>
+        Growdrive funciona como un <span style="color:#07CD72;font-weight:900">sistema completo</span> desde el día uno
+      </p>
+    </div>
+
+    <div class="why__grid">
+      <!-- SDR interno -->
+      <article class="card why-card why-card--bad">
+        <span style="display:inline-flex;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,82,82,.4);align-items:center;justify-content:center;color:#FF5252;background:#1a0e0e">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </span>
+        <h3 style="color:#fff;font-size:22px;font-weight:900;margin-top:16px">SDR interno</h3>
+        <p class="why-card__intro" style="margin-top:8px">
+          Dependes de contratar y entrenar personas. El pipeline crece lento, es inconsistente y difícil de escalar.
+        </p>
+
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Lento para contratar</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">4-8 semanas para empezar a ver resultados</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">inconsistencia</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Dependencia de performance individual</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Alto costo fijo</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Salarios, comisiones, herramientas</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Difícil de escalar</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Cada persona tiene un límite</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Rotación</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Empieza de nuevo cada vez</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Agencias -->
+      <article class="card why-card why-card--bad">
+        <span style="display:inline-flex;width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,82,82,.4);align-items:center;justify-content:center;color:#FF5252;background:#1a0e0e">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="2" width="16" height="20" rx="1"/>
+            <line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/>
+            <line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/>
+            <line x1="9" y1="14" x2="9" y2="14.01"/><line x1="15" y1="14" x2="15" y2="14.01"/>
+            <line x1="10" y1="22" x2="10" y2="18"/><line x1="14" y1="22" x2="14" y2="18"/>
+          </svg>
+        </span>
+        <h3 style="color:#fff;font-size:22px;font-weight:900;margin-top:16px">Agencias</h3>
+        <p class="why-card__intro" style="margin-top:8px">
+          Delegas la ejecución sin control real. Mensajes genéricos, poca visibilidad y resultados que cambian cada mes.
+        </p>
+
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Mensaje genéricos</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">No conocen tu negocio ni tu ICP</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Poca visibilidad</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">no sabes que hacen ni como lo hacen</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Resultados variables</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Sin control sobre el proceso</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">Comunicación lenta</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Idas y vueltas que retrasan todo</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          <div>
+            <div style="color:var(--gray-1);font-weight:900">No construyen activo</div>
+            <div style="color:var(--gray-3);font-size:11px;font-weight:400;margin-top:2px">Cuando se vayan, tu inversión también se fue</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sistema GROWDRIVE (highlighted) -->
+      <article class="card card--neon why-card why-card--good">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+          <svg width="120" height="24" viewBox="0 0 200 40" fill="none" aria-hidden="true">
+            <rect x="0"  y="0"  width="14" height="18" fill="#07D577"/>
+            <rect x="16" y="0"  width="14" height="18" fill="#07D577"/>
+            <rect x="6"  y="20" width="18" height="10" fill="#07D577"/>
+            <text x="38" y="20" font-family="Lato, sans-serif" font-weight="900" font-size="22" fill="#fff">GROWDRIVE</text>
+          </svg>
+        </div>
+        <h3 style="color:#fff;font-size:22px;font-weight:900;margin-top:8px">Sistema</h3>
+        <p class="why-card__intro" style="margin-top:8px">
+          Operas un sistema que genera reuniones de forma continua, con control total, consistencia y escalabilidad real.
+        </p>
+
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#12FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div style="color:#07D577;font-weight:900">Primeras reuniones en días</div>
+            <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:2px">Activamos todo y empezamos rápido</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#12FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div style="color:#07D577;font-weight:900">Consistencia y predictibilidad</div>
+            <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:2px">Sistema optimizado para generar resultados</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#12FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div style="color:#07D577;font-weight:900">Alta eficiencia de costos</div>
+            <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:2px">Más reuniones, menor costo por resultado</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#12FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div style="color:#07D577;font-weight:900">Escalabilidad real</div>
+            <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:2px">Infraestructura diseñada para crecer contigo</div>
+          </div>
+        </div>
+        <div class="why-card__row">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#12FF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <div>
+            <div style="color:#07D577;font-weight:900">Activo que es tuyo</div>
+            <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:2px"><span style="color:#07D577">Datos, aprendizajes y sistema</span> acumulativo</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- metrics row -->
+    <div class="card why__metrics">
+      <div class="why__metric" style="display:flex;gap:16px;align-items:center">
+        <svg width="40" height="40" viewBox="0 0 51 47" fill="none" aria-hidden="true">
+          <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
+        </svg>
+        <div class="why__metric-cta">
+          Growdrive no es otra opción.<br>
+          Es la forma correcta de<br>
+          <span class="accent">generar pipeline</span>
+        </div>
+      </div>
+      <div class="why__metric">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <div class="why__metric-num" style="font-size:42px;margin-top:8px">+215%</div>
+        <div class="why__metric-lbl">reuniones calificadas en 60 días</div>
+      </div>
+      <div class="why__metric">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="why__metric-num" style="font-size:42px;margin-top:8px">7 días</div>
+        <div class="why__metric-lbl">tiempo promedio para primeras reuniones</div>
+      </div>
+      <div class="why__metric" style="border-right:0">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <div class="why__metric-num" style="font-size:42px;margin-top:8px">3-10x</div>
+        <div class="why__metric-lbl">más reuniones vs métodos tradicionales</div>
+      </div>
+      <div class="why__metric" style="border-right:0">
+        <div style="display:flex;align-items:center;gap:8px">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="18"/></svg>
+        </div>
+        <div class="why__metric-num" style="font-size:42px;margin-top:8px">-40%</div>
+        <div class="why__metric-lbl">costo por reunión en promedio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="cta">
+  <div class="container">
+    <div class="card" style="padding:64px 48px;background:var(--grad-card)">
+      <div class="final__row">
+        <!-- form -->
+        <div class="final__form-wrap">
+          <span class="pill">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Activa tu pipeline
+          </span>
+          <h2 class="h-display-2">
+            Empieza a generar<br>
+            reuniones <span style="color:#07CD72">esta semana.</span>
+          </h2>
+          <p class="final__form-lead">
+            Te mostramos cómo se vería Growdrive en tu caso, con datos<br>
+            reales. <span style="color:#07CD72;font-weight:900">Sin compromiso.</span>
+          </p>
+
+          <hr class="divider" style="margin:24px 0">
+
+          <div class="final__notes" style="margin-top:0">
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              15 min para evaluar<br>tu caso
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Tus datos están<br>protegidos
+            </span>
+            <span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16.01"/></svg>
+              Sin compromiso.
+            </span>
+          </div>
+
+          <form class="final__form" onsubmit="return false">
+            <label style="color:#fff;font-size:13px;font-weight:900;margin-bottom:-4px">Nombre</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--gray-3)" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <input class="field" placeholder="Tu nombre completo" style="padding-left:44px">
+            </div>
+
+            <label style="color:#fff;font-size:13px;font-weight:900;margin-top:8px;margin-bottom:-4px">Email corporativo</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--gray-3)" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg>
+              </span>
+              <input class="field" placeholder="tu@empresa.com" type="email" style="padding-left:44px">
+            </div>
+
+            <label style="color:#fff;font-size:13px;font-weight:900;margin-top:8px;margin-bottom:-4px">Empresa</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--gray-3)" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="9" y1="6" x2="9" y2="6.01"/><line x1="15" y1="6" x2="15" y2="6.01"/><line x1="9" y1="10" x2="9" y2="10.01"/><line x1="15" y1="10" x2="15" y2="10.01"/></svg>
+              </span>
+              <input class="field" placeholder="Nombre de tu empresa" style="padding-left:44px">
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit" style="margin-top:16px;flex-direction:column;gap:4px;padding:18px">
+              <span style="display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:900">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B2731" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                QUIERO MÁS REUNIONES
+              </span>
+              <span style="font-size:11px;font-weight:400;color:rgba(11,39,49,.7)">Te respondemos en menos de 24h</span>
+            </button>
+
+            <div class="final__notes" style="margin-top:12px">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                Respuesta en &lt;24h
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12" y2="16.01"/></svg>
+                Sin compromiso.
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07C56E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12" y2="17.01"/></svg>
+                Solo trabajamos con<br>empresas B2B
+              </span>
+            </div>
+          </form>
+        </div>
+
+        <!-- benefits -->
+        <div class="final__benefits">
+          <h3 class="final__benefits-h">En tu evaluación gratuita recibirás:</h3>
+
+          <div class="final__benefit">
+            <div class="final__benefit-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="20" x2="12" y2="10"/>
+                <line x1="18" y1="20" x2="18" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="16"/>
+              </svg>
+            </div>
+            <div>
+              <div class="final__benefit-t" style="color:#07D577">Análisis personalizado</div>
+              <div class="final__benefit-d">Revisamos tu ICP, oferta y mercado para identificar oportunidades reales.</div>
+            </div>
+          </div>
+
+          <div class="final__benefit">
+            <div class="final__benefit-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                <polyline points="16 7 22 7 22 13"/>
+              </svg>
+            </div>
+            <div>
+              <div class="final__benefit-t" style="color:#07D577">Proyección de resultados</div>
+              <div class="final__benefit-d">Te mostramos en potencial de reuniones y pipeline que podemos generar.</div>
+            </div>
+          </div>
+
+          <div class="final__benefit">
+            <div class="final__benefit-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="final__benefit-t" style="color:#07D577">Estrategia recomendada</div>
+              <div class="final__benefit-d">Revisamos tu ICP, oferta y mercado para identificar oportunidades reales.</div>
+            </div>
+          </div>
+
+          <div class="final__benefit">
+            <div class="final__benefit-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/>
+                <line x1="12" y1="6" x2="12" y2="8"/>
+                <line x1="12" y1="16" x2="12" y2="18"/>
+              </svg>
+            </div>
+            <div>
+              <div class="final__benefit-t" style="color:#07D577">Inversión y ROI estimado</div>
+              <div class="final__benefit-d">Entiendes la inversión, el retorno esperado y el impacto en tu negocio.</div>
+            </div>
+          </div>
+
+          <div class="final__benefit">
+            <div class="final__benefit-ic">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 8 16 12 12 16"/>
+                <line x1="8" y1="12" x2="16" y2="12"/>
+              </svg>
+            </div>
+            <div>
+              <div class="final__benefit-t" style="color:#07D577">Próximos pasos</div>
+              <div class="final__benefit-d">Te guiamos en el plan de implementación para empezar rápido.</div>
+            </div>
+          </div>
+
+          <hr class="divider" style="margin:32px 0 20px">
+
+          <div class="final__logos">
+            <div class="final__logos-lbl">EMPRESAS B2B QUE YA GENERAN MAS REUNIONES</div>
+            <div class="final__logos-row">
+              <span class="placeholder placeholder--logo" data-label="LOGO" style="height:32px;width:120px;border-radius:4px;border-color:rgba(151,151,151,.3);background:rgba(216,216,216,.13);font-size:9px"></span>
+              <span class="placeholder placeholder--logo" data-label="LOGO" style="height:32px;width:120px;border-radius:4px;border-color:rgba(151,151,151,.3);background:rgba(216,216,216,.13);font-size:9px"></span>
+              <span class="placeholder placeholder--logo" data-label="LOGO" style="height:32px;width:120px;border-radius:4px;border-color:rgba(151,151,151,.3);background:rgba(216,216,216,.13);font-size:9px"></span>
+              <span class="placeholder placeholder--logo" data-label="LOGO" style="height:32px;width:120px;border-radius:4px;border-color:rgba(151,151,151,.3);background:rgba(216,216,216,.13);font-size:9px"></span>
+            </div>
+          </div>
+
+          <div class="final__rating">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#07D577" stroke="#07D577" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#07D577" stroke="#07D577" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#07D577" stroke="#07D577" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#07D577" stroke="#07D577" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#07D577" stroke="#07D577" stroke-width="1" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.1 8.7 22 9.5 17 14.4 18.5 21.5 12 17.8 5.5 21.5 7 14.4 2 9.5 8.9 8.7 12 2"/></svg>
+            <span class="final__rating-text">4.9/5 en satisfacción de clientes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="margin-top:48px;text-align:center">
+      <div style="display:flex;align-items:center;justify-content:center;gap:16px">
+        <svg width="48" height="44" viewBox="0 0 51 47" fill="none" aria-hidden="true">
+          <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
+          <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
+        </svg>
+        <span class="logo-word" style="font-size:42px">GROWDRIVE</span>
+      </div>
+      <div style="color:var(--gray-1);font-size:12px;font-family:Arial,sans-serif;font-weight:400;margin-top:24px">
+        © 2025 Growdrive. Todos los derechos reservados.
+      </div>
+    </footer>
+  </div>
+</section>
+</body>
+</html>

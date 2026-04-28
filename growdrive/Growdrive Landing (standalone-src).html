@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Growdrive — Agenda reuniones calificadas en automático</title>
+<meta name="ext-resource-dependency" content="assets/photo1.png" data-resource-id="photo1" />
+<meta name="ext-resource-dependency" content="assets/avatar-maria.png" data-resource-id="avatarMaria" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --green:#07D577;          /* primary green */
+    --green-2:#07CD72;
+    --green-3:#07C56E;
+    --green-bright:#12FF00;   /* accent neon */
+    --ink:#0B2A34;            /* deep teal/ink */
+    --ink-2:#062813;
+    --ink-3:#061213;
+    --ink-card:#0B2A34;
+    --ink-card-2:#061213;
+    --line:#203232;
+    --gray-1:#C9C9C9;
+    --gray-2:#979797;
+    --gray-3:#737373;
+    --gray-4:#CCD0D4;
+    --soft:#F4F4F4;
+  }
+  html,body{background:#fff;color:var(--ink);}
+  body{font-family:'Lato', system-ui, -apple-system, sans-serif; -webkit-font-smoothing:antialiased; font-weight:700;}
+  .font-arial{font-family: Arial, ArialMT, system-ui, sans-serif;}
+  .text-green{color:var(--green);} .bg-green{background:var(--green);} .border-green{border-color:var(--green);}
+  .text-green-bright{color:var(--green-bright);}
+  .text-ink{color:var(--ink);} .bg-ink{background:var(--ink);}
+  .bg-ink-grad{background:linear-gradient(180deg,#0B2A34 0%,#061213 100%);}
+  .bg-hero-grad{background:linear-gradient(180deg,#0B2A34 0%,#000 100%);}
+  .bg-footer-grad{background:linear-gradient(180deg,#fff 0%,#0B2A34 68%,#000 100%);}
+  .card-grad{background:linear-gradient(180deg,#0B2A34 0%,#061213 100%);}
+  .card-grad-soft{background:linear-gradient(180deg,#0E292B 0%,#061213 100%);}
+  .card-line{border:2px solid var(--line);}
+  .pill{display:inline-flex;align-items:center;gap:.5rem;border:1px solid var(--green-2);border-radius:9999px;padding:6px 16px;color:var(--green-2);font-weight:700;font-size:14px;letter-spacing:.02em;text-transform:uppercase;}
+  .pill .dot{width:10px;height:10px;border-radius:9999px;background:var(--green-bright);box-shadow:0 0 10px rgba(18,255,0,.6);}
+  .btn-primary{background:var(--green);color:var(--ink);border-radius:10px;padding:14px 22px;font-weight:700;display:inline-flex;align-items:center;gap:10px;transition:transform .15s ease, box-shadow .2s ease;}
+  .btn-primary:hover{transform:translateY(-1px); box-shadow:0 8px 24px rgba(7,213,119,.35);}
+  .btn-ghost{border:1px solid var(--green);color:var(--green);border-radius:10px;padding:14px 22px;font-weight:700;display:inline-flex;align-items:center;gap:10px; background:transparent;}
+  .btn-ghost:hover{background:rgba(7,213,119,.08);}
+  .nav-link{color:#C9C9C9;font-weight:400;font-size:14px;}
+  .nav-link:hover{color:#fff;}
+  .glow-green{box-shadow:0 2px 30px 2px rgba(7,205,114,.35);}
+  .neon-stroke{box-shadow:inset 0 0 0 2px var(--green-bright), 0 0 24px rgba(18,255,0,.18);}
+  .h-display{font-size:54px;line-height:1.05;letter-spacing:-.01em;font-weight:900;}
+  .h-display-2{font-size:38px;line-height:1.05;font-weight:900;}
+  .body-lead{font-size:20px;line-height:1.45;color:#fff;font-weight:700;}
+  .stat-num{font-family:Arial, sans-serif; font-weight:900; font-size:56px; color:var(--green);}
+  .scroll-mask{mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);}
+  .grid-bg{
+    background-image:
+      radial-gradient(1200px 600px at 50% 100%, rgba(7,213,119,.10), transparent 60%),
+      linear-gradient(180deg,#0B2A34 0%,#000 100%);
+  }
+  .funnel-glow{
+    background: radial-gradient(closest-side, rgba(7,213,119,.55), rgba(9,31,37,1) 70%);
+  }
+  .check-c{color:var(--green);} .x-c{color:#FF5252;}
+  .table-cell{padding:14px 16px; font-size:14px; color:var(--gray-1); font-weight:400;}
+  .table-h{padding:18px 16px; font-weight:900; color:#fff;}
+  .neon-card{background:linear-gradient(180deg,#0B2A34 0%,#061213 100%); border:2px solid var(--green-bright); box-shadow:0 0 0 1px rgba(18,255,0,.2), 0 0 40px rgba(7,205,114,.25);}
+  /* logo word mark fallback */
+  .logo-word{font-family:'Lato',sans-serif; font-weight:900; letter-spacing:.04em;}
+  .logo-mark{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;}
+  /* photo placeholders */
+  .photo-tile{background:#0E292B center/cover no-repeat; border-radius:10px; position:relative; overflow:hidden;}
+  .photo-tile::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0) 50%, rgba(0,0,0,.45));}
+  /* form */
+  .field{background:transparent;border:1px solid #979797;border-radius:10px;padding:14px 16px;color:#fff;font-weight:400;width:100%;}
+  .field::placeholder{color:#737373;font-weight:400;}
+  .field:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(7,213,119,.18);}
+  .check-row{display:flex;gap:12px;align-items:flex-start;color:#fff;}
+  .check-row .ic{flex:0 0 auto;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green);}
+  .divider-h{height:1px;background:rgba(151,151,151,.25);}
+  /* tiny chart bars */
+  .bar{width:9px;background:var(--green-bright);border-radius:1px;}
+  /* scrolling logo strip */
+  @keyframes marquee {0%{transform:translateX(0)} 100%{transform:translateX(-50%)}}
+  .marquee{display:flex;gap:48px;animation:marquee 35s linear infinite;}
+</style>
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#0B2A34">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B2A34"/>
+    <g transform="translate(540 340)">
+      <rect x="0" y="0" width="50" height="58" fill="#07D577"/>
+      <rect x="60" y="0" width="50" height="58" fill="#07D577"/>
+      <rect x="20" y="65" width="70" height="35" fill="#07D577"/>
+    </g>
+    <text x="600" y="500" font-family="Arial, sans-serif" font-weight="900" font-size="44" fill="#ffffff" text-anchor="middle" letter-spacing="3">GROWDRIVE</text>
+  </svg>
+</template>
+
+<div id="root"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="icons.jsx"></script>
+<script type="text/babel" src="app-top.jsx"></script>
+<script type="text/babel" src="app-mid.jsx"></script>
+<script type="text/babel" src="app-bot.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
