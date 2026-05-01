@@ -8,28 +8,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
+  <script defer src="scripts/dev-flag.js"></script>
 </head>
 <body>
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="#" class="site-header__brand" aria-label="Growdrive home">
-      <span class="logo-mark" aria-hidden="true">
-        <svg width="28" height="28" viewBox="0 0 51 47" fill="none">
-          <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
-          <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
-          <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
-        </svg>
-      </span>
-      <span class="logo-word" style="font-size:22px">GROWDRIVE</span>
+      <img src="logo.png" alt="Growdrive — Predictable Pipeline" class="site-header__logo">
     </a>
 
-    <nav class="site-header__nav" aria-label="Principal">
-      <a href="#how" class="nav-link">¿Cómo funciona?</a>
-      <a href="#pricing" class="nav-link">Precios</a>
-      <a href="#cases" class="nav-link">Casos de éxito</a>
-    </nav>
-
-    <a href="#cta" class="btn btn--primary btn--sm">Agendar demo</a>
+    <div class="site-header__right">
+      <nav class="site-header__nav" aria-label="Principal">
+        <a href="#how" class="nav-link">¿Cómo funciona?</a>
+        <a href="#pricing" class="nav-link">Precios</a>
+        <a href="#cases" class="nav-link">Casos de éxito</a>
+      </nav>
+      <a href="#cta" class="btn btn--primary btn--sm">Agendar demo</a>
+    </div>
   </div>
 </header>
 
@@ -86,7 +81,7 @@
       <div class="problem__cards">
         <article class="card problem__card">
           <span class="problem__card-ic" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
               <circle cx="9" cy="7" r="4"/>
               <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
@@ -101,7 +96,7 @@
 
         <article class="card problem__card">
           <span class="problem__card-ic" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="4" y="2" width="16" height="20" rx="1"/>
               <line x1="9"  y1="6"  x2="9"  y2="6.01"/>
               <line x1="15" y1="6"  x2="15" y2="6.01"/>
@@ -119,7 +114,7 @@
 
         <article class="card problem__card">
           <span class="problem__card-ic" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FF5252" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 2.06 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.13.94.36 1.86.7 2.74a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6.09 6.09l1.34-1.34a2 2 0 0 1 2.11-.45c.88.34 1.8.57 2.74.7A2 2 0 0 1 22 16.92z"/>
               <line x1="22" y1="2" x2="14" y2="10"/>
               <line x1="14" y1="2" x2="22" y2="10"/>
@@ -137,39 +132,6 @@
       <div class="problem__photo">
         <div class="placeholder placeholder--problem" data-label="Foto: persona preocupada"></div>
       </div>
-
-      <div class="card problem__stat problem__stat--1">
-        <div class="problem__stat-row">
-          <span style="color:#fff;font-weight:900">Respuestas</span>
-        </div>
-        <div class="problem__stat-num">2%</div>
-        <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:6px">Tasa de respuesta</div>
-        <div class="problem__stat-bar"><span style="width:15%"></span></div>
-      </div>
-
-      <div class="card problem__stat problem__stat--2">
-        <div class="problem__stat-row">
-          <span style="color:#fff;font-weight:900">Reuniones calificadas</span>
-        </div>
-        <div class="problem__stat-num">3%</div>
-        <div style="color:var(--gray-1);font-size:11px;font-weight:400;margin-top:6px">Este mes</div>
-        <svg viewBox="0 0 160 30" style="margin-top:12px;width:100%;height:28px" aria-hidden="true">
-          <polyline points="0,5 30,8 60,12 90,18 130,22 160,26" fill="none" stroke="#FF5252" stroke-width="2"/>
-          <circle cx="160" cy="26" r="2.5" fill="#FF5252"/>
-        </svg>
-      </div>
-
-      <div class="card" style="position:absolute;right:24px;bottom:24px;padding:16px;display:flex;align-items:center;gap:12px;max-width:300px">
-        <span style="flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;border:2px solid #FF5252;color:#FF5252">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-        </span>
-        <span style="color:#fff;font-size:13px;font-weight:900;line-height:1.3">
-          Más herramientas. Más procesos.<br>Mismos resultados
-        </span>
-      </div>
     </div>
   </div>
 </section>
@@ -186,96 +148,33 @@
         <span style="color:#07CD72">que convierte esfuerzos en reuniones.</span>
       </h2>
 
-      <div class="pipeline__grid">
-        <!-- left: ENTRADAS -->
-        <div class="pipeline__col" style="align-items:center">
-          <div class="pipeline__col-label">ENTRADAS</div>
-          <div style="position:relative;width:200px;height:240px" aria-hidden="true">
-            <svg viewBox="0 0 200 240" fill="none" style="position:absolute;inset:0;width:100%;height:100%">
-              <!-- líneas curvas conectando íconos al centro derecha -->
-              <path d="M 30,40 C 110,40 150,100 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 30,90 C 110,90 150,110 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 30,140 C 110,140 150,125 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 30,200 C 110,200 150,150 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 90,20  C 130,40 170,90 200,120"   stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 100,60 C 140,80 170,110 200,120"  stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-              <path d="M 110,180 C 140,160 170,140 200,120" stroke="#07D577" stroke-width="1.2" opacity=".55"/>
-            </svg>
-            <!-- íconos en columna izquierda -->
-            <span style="position:absolute;left:0;top:24px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg>
-            </span>
-            <span style="position:absolute;left:0;top:74px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
-            </span>
-            <span style="position:absolute;left:0;top:124px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </span>
-            <span style="position:absolute;left:0;top:184px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/><circle cx="6"  cy="18" r="3"/><circle cx="18" cy="18" r="3"/></svg>
-            </span>
-            <span style="position:absolute;left:60px;top:64px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5"  rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
-            </span>
-            <span style="position:absolute;left:60px;top:124px;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2"  x2="8"  y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </span>
-            <span style="position:absolute;left:60px;top:0;width:40px;height:40px;border-radius:8px;border:1px solid #07D577;display:grid;place-items:center;color:#07D577;background:#0B2A34">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
-            </span>
-          </div>
-          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
+      <div class="pipeline__cards">
+        <article class="pipeline__card">
+          <h3 class="pipeline__card-title">ENTRADAS</h3>
+          <div class="pipeline__card-media" aria-hidden="true">IMAGEN</div>
+          <p class="pipeline__card-desc">
             Múltiples canales, cuentas y dominios gestionados para máxima entregabilidad.
           </p>
-        </div>
+        </article>
 
-        <!-- center: SISTEMA GROWDRIVE -->
-        <div class="pipeline__center">
-          <div class="pipeline__col-label" style="margin-bottom:8px">SISTEMA<br>GROWDRIVE</div>
-          <div class="pipeline__orb">
-            <svg width="84" height="76" viewBox="0 0 51 47" fill="none" aria-hidden="true">
-              <rect x="0"  y="0"  width="24" height="28" fill="#07D577"/>
-              <rect x="27" y="0"  width="24" height="28" fill="#07D577"/>
-              <rect x="9"  y="30" width="32" height="17" fill="#07D577"/>
-            </svg>
-          </div>
-          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
-            IA + Datos + Automatización +<br>Warm-up trabajando en conjunto.
+        <article class="pipeline__card">
+          <h3 class="pipeline__card-title">SISTEMA<br>GROWDRIVE</h3>
+          <div class="pipeline__card-media" aria-hidden="true">IMAGEN</div>
+          <p class="pipeline__card-desc">
+            IA + Datos + Automatización + Warm-up trabajando en conjunto.
           </p>
-        </div>
+        </article>
 
-        <!-- right: INTELIGENCIA DE PIPELINE -->
-        <div class="pipeline__col" style="align-items:flex-end">
-          <div class="pipeline__col-label">INTELIGENCIA DE<br>PIPELINE</div>
-          <div style="position:relative;width:100%;display:flex;justify-content:center">
-            <!-- flecha desde el centro -->
-            <svg viewBox="0 0 120 40" style="position:absolute;left:-100px;top:80px;width:120px;height:40px" aria-hidden="true">
-              <line x1="0" y1="20" x2="105" y2="20" stroke="#07D577" stroke-width="2"/>
-              <polyline points="100,12 110,20 100,28" fill="none" stroke="#07D577" stroke-width="2"/>
-            </svg>
-            <div class="card" style="padding:16px;width:240px">
-              <div style="color:#fff;font-size:12px;font-weight:900">Pipeline proyectado</div>
-              <div style="color:var(--gray-1);font-size:10px;font-weight:400">(prox. 30 días)</div>
-              <div style="color:var(--green-bright);font-size:30px;font-weight:900;font-family:Arial,sans-serif;margin-top:8px;line-height:1">US$198k</div>
-              <div style="color:var(--green-bright);font-size:10px;font-weight:900;letter-spacing:.05em;margin-top:4px">▲ +89% +31% VS ACTUAL</div>
-              <div style="display:flex;align-items:flex-end;gap:6px;margin-top:14px;height:60px">
-                <span class="bar" style="height:14px"></span>
-                <span class="bar" style="height:18px"></span>
-                <span class="bar" style="height:22px"></span>
-                <span class="bar" style="height:18px"></span>
-                <span class="bar" style="height:30px"></span>
-                <span class="bar" style="height:34px"></span>
-                <span class="bar" style="height:40px"></span>
-                <span class="bar" style="height:38px"></span>
-                <span class="bar" style="height:48px"></span>
-                <span class="bar" style="height:54px"></span>
-              </div>
-            </div>
-          </div>
-          <p style="color:#C9C9C9;font-size:12px;font-weight:400;text-align:center;line-height:1.45;max-width:240px;margin-top:16px">
-            Reuniones calificadas en tu calendario. Dashboards claros para tomar mejores decisiones y predecir resultados
+        <article class="pipeline__card">
+          <h3 class="pipeline__card-title">INTELIGENCIA DE<br>PIPELINE</h3>
+          <div class="pipeline__card-media" aria-hidden="true">IMAGEN</div>
+          <p class="pipeline__card-desc">
+            Reuniones calificadas en tu calendario. Dashboards claros para tomar mejores decisiones y predecir resultados.
           </p>
-        </div>
+        </article>
+
+        <span class="pipeline__connector pipeline__connector--a" aria-hidden="true">IMAGEN BG</span>
+        <span class="pipeline__connector pipeline__connector--b" aria-hidden="true">IMAGEN BG</span>
       </div>
     </div>
   </div>
@@ -301,23 +200,29 @@
       <article class="card feature-card">
         <h3 class="feature-card__title">Solo pagas por infraestructura</h3>
         <p class="feature-card__sub">Cuentas, dominios y warm-up automático</p>
-        <div style="margin-top:28px;display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;color:#07D577">
-          <!-- 16 íconos alternando calendar / clock -->
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="feature-card__icon-grid">
+          <!-- 21 íconos alternando calendar / clock / shield -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
       </article>
 
@@ -328,34 +233,39 @@
 
         <div class="email-mock">
           <div class="email-mock__bar">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#07D577" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/>
-            </svg>
+            <span class="email-mock__bar-chip">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3 L13.4 10.6 L21 12 L13.4 13.4 L12 21 L10.6 13.4 L3 12 L10.6 10.6 Z"/>
+                <path d="M19 4 L19.4 5.6 L21 6 L19.4 6.4 L19 8 L18.6 6.4 L17 6 L18.6 5.6 Z"/>
+              </svg>
+            </span>
             <div class="email-mock__bar-text">
               <div class="t1">Mensaje generado por IA</div>
               <div class="t2">Personalizado para [Nombre prospecto]</div>
             </div>
           </div>
           <div class="email-mock__meta">
-            <div>Para: <strong>luis@empresa.com</strong></div>
-            <div style="margin-top:6px">Asunto: <strong>¿Tu pipeline depende de SDRs?</strong></div>
+            <span class="email-mock__meta-label">Para:</span>
+            <span class="email-mock__meta-value">luis@empresa.com</span>
+            <span class="email-mock__meta-label">Asunto:</span>
+            <span class="email-mock__meta-value email-mock__meta-value--bold">¿Tu pipeline depende de SDRs?</span>
           </div>
           <div class="email-mock__sep"></div>
           <div class="email-mock__body">
-            Hola Luis,<br><br>
-            Si hoy tu pipeline depende de SDRs o agencias, es normal que sea inconsistente.<br><br>
-            Growdrive reemplaza eso con un sistema que genera reuniones de forma predecible.<br><br>
-            ¿Quieres ver cómo se vería funcionando para [Empresa]?<br><br>
-            —<br>Álvaro<br>Growdrive|
+            <p>Hola Luis,</p>
+            <p>Si hoy tu pipeline depende de SDRs o agencias, es normal que sea inconsistente.</p>
+            <p>Growdrive reemplaza eso con un sistema que genera reuniones de forma predecible.</p>
+            <p>¿Quieres ver cómo se vería funcionando para [Empresa]?</p>
+            <p>—<br>Álvaro<br>Growdrive|</p>
           </div>
           <div class="email-mock__sep"></div>
           <div class="email-mock__tags">
-            <span class="email-mock__tag email-mock__tag--filled">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#0B2731" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 11a4 4 0 1 1-8 0V5a4 4 0 1 1 8 0z"/></svg>
+            <span class="email-mock__tag">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               Personalizado
             </span>
-            <span class="email-mock__tag email-mock__tag--outline">
-              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            <span class="email-mock__tag">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><polyline points="7 14 11 10 14 13 17 8"/><circle cx="17" cy="8" r="2" fill="currentColor"/></svg>
               Orientado a resultados
             </span>
           </div>
