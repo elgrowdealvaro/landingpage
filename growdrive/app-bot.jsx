@@ -97,7 +97,7 @@ function ScalingCTA() {
               Agenda una demo y ve cómo Growdrive puede transformar tu pipeline.
             </p>
             <div className="flex gap-3 mt-8">
-              <a href="#cta" className="btn-primary">Agendar una demo</a>
+              <a href="#cta" className="btn-primary">Agendar demo</a>
               <a href="#cta" className="btn-ghost">Inicia ahora</a>
             </div>
             <div className="flex gap-6 mt-6 text-[12px] text-[#C9C9C9] font-arial">
