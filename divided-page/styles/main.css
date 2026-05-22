@@ -164,7 +164,13 @@ input, textarea { font: inherit; }
 .card--neon {
   background: var(--grad-card);
   border: 2px solid var(--green-bright);
-  box-shadow: 0 0 0 1px rgba(18, 255, 0, .2), 0 0 40px rgba(7, 205, 114, .25);
+  box-shadow:
+    0 0 0 1px rgba(18, 255, 0, .35),
+    0 0 12px rgba(18, 255, 0, .55),
+    0 0 28px rgba(18, 255, 0, .45),
+    0 0 60px rgba(7, 205, 114, .55),
+    0 0 100px rgba(7, 205, 114, .35),
+    inset 0 0 24px rgba(18, 255, 0, .12);
 }
 
 /* Display headings */
@@ -854,12 +860,12 @@ body.preview > * {
   gap: 24px;
 }
 .testimonial {
-  border: 1px solid #E5E7EB;
-  border-radius: var(--r-md);
-  padding: 24px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(11, 39, 49, .04);
+  padding: 0 24px;
+  background: transparent;
 }
+.testimonial:not(:last-child) { border-right: 1px solid #E5E7EB; }
+.testimonial__stars { display: flex; gap: 4px; margin-bottom: 16px; }
+.testimonial__stars img { width: 24px; height: 24px; }
 .testimonial__avatar { object-fit: cover; }
 .testimonial__quote { color: #0B2731; font-size: 14px; line-height: 1.55; font-weight: 400; }
 .testimonial__by { display: flex; align-items: center; gap: 12px; margin-top: 20px; }
@@ -878,15 +884,13 @@ body.preview > * {
   align-items: center;
   position: relative;
   overflow: hidden;
+  background: var(--ink);
 }
 .scaling__bg {
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
-  width: 60%;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 30%);
-          mask-image: linear-gradient(90deg, transparent 0, #000 30%);
 }
 .scaling__bg .placeholder { height: 100%; border-radius: 0; aspect-ratio: auto; }
 .scaling__copy { position: relative; z-index: 2; }
@@ -957,7 +961,7 @@ body.preview > * {
 
 
 /* SECTION 09 — Why Growdrive */
-.why { background: #fff; padding: 96px 0; }
+.why { background: #fff; padding: 30px 0; }
 .why__head { text-align: center; }
 .why__head h2 { color: #0B2731; margin-top: 20px; }
 .why__head p {
@@ -976,6 +980,8 @@ body.preview > * {
   align-items: stretch;
 }
 .why-card { padding: 28px; }
+.why-card--bad { margin: 20px 8px; }
+.why-card--good { margin: 0; }
 .why-card__head {
   display: flex;
   align-items: center;
@@ -1000,13 +1006,11 @@ body.preview > * {
   align-items: center;
   gap: 12px;
   padding: 8px 0;
-  border-top: 1px solid var(--line);
   font-size: 13px;
   font-weight: 400;
   color: var(--gray-1);
 }
 .why-card--good .why-card__row {
-  border-top-color: #173E2B;
   color: #fff;
   font-weight: 900;
 }
@@ -1015,11 +1019,19 @@ body.preview > * {
   margin-top: 40px;
   padding: 32px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1.4fr repeat(4, 1fr);
   gap: 24px;
   align-items: center;
 }
-.why__metric { padding-right: 24px; border-right: 1px solid #173E2B; }
+.why__metric {
+  padding: 0 24px;
+  border-right: 1px solid #173E2B;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .why__metric:last-child { border-right: 0; }
 .why__metric-num {
   color: var(--green);
@@ -1064,6 +1076,7 @@ body.preview > * {
 }
 .final__form { margin-top: 32px; max-width: 540px; display: grid; gap: 12px; }
 .final__form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.final__field { display: flex; flex-direction: column; gap: 4px; }
 .final__form .btn { margin-top: 8px; font-size: 16px; }
 .final__notes {
   display: flex;
@@ -1083,15 +1096,13 @@ body.preview > * {
   flex: none;
   width: 40px;
   height: 40px;
-  border-radius: var(--r-md);
-  border: 2px solid var(--green);
   display: grid;
   place-items: center;
 }
 .final__benefit-t { color: #fff; font-size: 18px; font-weight: 900; }
 .final__benefit-d { color: var(--gray-1); font-size: 14px; margin-top: 4px; line-height: 1.45; font-weight: 400; }
 
-.final__logos { margin-top: 40px; }
+.final__logos { margin-top: 40px; text-align: center; }
 .final__logos-lbl {
   color: var(--gray-1);
   font-size: 11px;
@@ -1099,7 +1110,7 @@ body.preview > * {
   font-weight: 900;
   margin-bottom: 16px;
 }
-.final__logos-row { display: flex; gap: 12px; align-items: center; }
+.final__logos-row { display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap; }
 .final__logo {
   padding: 8px 16px;
   border-radius: 6px;
@@ -1111,6 +1122,7 @@ body.preview > * {
 .final__rating {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-top: 20px;
 }
