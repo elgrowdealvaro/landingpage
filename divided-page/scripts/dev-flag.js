@@ -7,6 +7,12 @@
      <script defer src="../scripts/dev-flag.js"></script>
    ============================================================ */
 (function () {
+  // Solo en desarrollo: localhost, 127.0.0.1 o archivo abierto directo (file://).
+  // En producción (growdrive.app, *.github.io) el panel no se monta.
+  var h = location.hostname;
+  var isDev = h === 'localhost' || h === '127.0.0.1' || h === '0.0.0.0' || h === '' || /\.local$/.test(h);
+  if (!isDev) return;
+
   if (window.__devFlagInstalled) return;
   window.__devFlagInstalled = true;
 

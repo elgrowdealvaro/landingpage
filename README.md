@@ -101,7 +101,7 @@ Panel flotante con toggles para visualizar containers, secciones, espaciado y to
 
 **Compactar / restaurar**: dentro del panel hay un botón "Compactar a punto" que reduce la bandera al puntito magenta (54% opacidad). Para volver a expandirla basta hacer click sobre el punto. Sin atajos de teclado — los combos `⌥+L`, `⌘+⌥+L` y `Ctrl+Shift+L` chocan con Firefox/Mac, así que opté por una solución 100% mouse.
 
-**Quitar de producción**: borrar `<script defer src=".../dev-flag.js">` de `_shell.html` y de cada `0X-*.html`. El CSS se inyecta por JS, no hace falta tocar nada más.
+**Producción**: el panel se auto-desactiva fuera de desarrollo. `dev-flag.js` solo se monta en `localhost`, `127.0.0.1`, `*.local` o `file://`; en `growdrive.app` y `*.github.io` no aparece, aunque el `<script>` siga incluido. Para quitarlo del todo, borra el `<script defer src=".../dev-flag.js">` de `_shell.html` y de cada `0X-*.html`.
 
 ---
 
