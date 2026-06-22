@@ -1144,3 +1144,194 @@ body.preview > * {
 .final__footer-links { display: flex; gap: 20px; }
 .final__footer-links a { transition: color .15s ease; }
 .final__footer-links a:hover { color: #fff; }
+
+
+/* ============================================================
+   7. Responsive — Mobile (vertical, ref. Sketch iPhone 11 Pro Max)
+   Apila todas las secciones a 1 columna y ajusta paddings/tipos.
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* ── Tokens / layout global ── */
+  :root { --pad-x: 16px; }
+
+  .h-display   { font-size: 32px; line-height: 1.18; }
+  .h-display-2 { font-size: 26px; line-height: 1.15; }
+
+  .pill { font-size: 12px; padding: 5px 12px; }
+
+  /* En móvil la mayoría de <br> sobran: dejamos que el texto fluya */
+  .hero__title br,
+  .hero__lead br,
+  .market__copy br,
+  .final__form-lead br { display: none; }
+
+
+  /* ── 01 · Header ── */
+  .site-header__inner { height: 60px; gap: 12px; }
+  .site-header__logo  { height: 30px; }
+  .site-header__nav   { display: none; }          /* nav colapsa en móvil */
+  .site-header__right { gap: 12px; }
+  .site-header .btn--sm { padding: 9px 14px; font-size: 13px; }
+
+
+  /* ── 02 · Hero ── */
+  .hero__inner { padding-top: 48px; }
+  .hero__pill-wrap { margin-bottom: 16px; }
+  .hero__lead { font-size: 16px; margin-top: 16px; }
+  .hero__ctas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 0 8px;
+  }
+  .hero__ctas .btn { width: 100%; justify-content: center; }
+  .hero__mock { margin-top: 28px; border-radius: var(--r-md) var(--r-md) 0 0; }
+
+
+  /* ── 03 · Problem ── */
+  .problem__inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .problem__lead,
+  .problem__cards { max-width: none; }
+  .problem__photo-img { height: 300px; }
+
+
+  /* ── 04 · Pipeline ── */
+  .pipeline__box { padding: 28px 20px; }
+  .pipeline__heading { margin-top: 16px; }
+  .pipeline__cards {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  .pipeline__card { max-width: none; }
+  .pipeline__connector { display: none; }         /* flechas horizontales no aplican */
+  .pipeline__card-title { min-height: 0; }
+  .pipeline__card-media { width: 70%; height: 240px; }
+
+
+  /* ── 05 · Features ── */
+  .features { padding: 48px 0; }
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .feature-card { padding: 24px; }
+  .feature-card--tall { grid-row: auto; }
+  .feature-card__icon-grid svg { width: 100%; height: auto; }
+
+
+  /* ── 06 · Process ── */
+  .process { padding: 48px 0; }
+  .process__grid { grid-template-columns: 1fr; gap: 28px; }
+  .process__lead { max-width: none; }
+  .process__list { margin-top: 8px; }
+  .process__item { padding: 20px; gap: 16px; }
+
+
+  /* ── 07 · Market ── */
+  .market { padding: 48px 0; }
+  /* El collage absoluto (1260px) se convierte en grid fluido 2-col */
+  .market-collage {
+    position: static !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 24px !important;
+  }
+  .market-collage img {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: 130px !important;
+    border-radius: var(--r-md);
+  }
+  /* La copy tenía margin-top:-250px para solapar el collage; lo anulamos */
+  .market-collage + div { margin-top: 0 !important; }
+  .market__testimonials {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 48px;
+  }
+  .testimonial { padding: 24px 0; }
+  .testimonial:not(:last-child) {
+    border-right: 0;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+
+  /* ── 08 · Scaling CTA ── */
+  .scaling { padding-bottom: 48px; }
+  .scaling__box {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 20px;
+  }
+  .scaling__bg { display: none; }                 /* fondo absoluto no aplica */
+  .scaling__copy p { max-width: none; }
+  .scaling__ctas { flex-direction: column; align-items: stretch; }
+  .scaling__ctas .btn { width: 100%; justify-content: center; }
+  .scaling__notes { flex-wrap: wrap; gap: 12px 20px; }
+  .scaling__features { grid-template-columns: 1fr 1fr; max-width: none; }
+  .scaling__quote { justify-self: stretch; align-self: auto; }
+  .scaling__quote-card { max-width: none; }
+
+
+  /* ── 09 · Why Growdrive ── */
+  .why__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  .why-card--bad  { margin: 0; }
+  .why-card--good { margin: 0; }
+  .why__metrics {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 24px;
+    margin-top: 28px;
+  }
+  .why__metric {
+    padding: 18px 0;
+    border-right: 0;
+    border-bottom: 1px solid #173E2B;
+  }
+  .why__metric:last-child { border-bottom: 0; }
+  .why__metric-num { font-size: 44px; }
+
+
+  /* ── 10 · Final CTA + Footer ── */
+  .final { padding: 48px 0 40px; }
+  .final .card { padding: 28px 20px !important; }
+  .final__row { grid-template-columns: 1fr; gap: 40px; }
+  .final__form,
+  .final__form-lead { max-width: none; }
+  .final__form-row { grid-template-columns: 1fr; }
+  .final__notes { flex-wrap: wrap; gap: 12px 20px; }
+  .final__footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+
+/* Refinamiento para teléfonos muy estrechos */
+@media (max-width: 400px) {
+  .h-display   { font-size: 28px; }
+  .h-display-2 { font-size: 23px; }
+  .scaling__features { grid-template-columns: 1fr; }
+  .market-collage img { height: 110px !important; }
+}
