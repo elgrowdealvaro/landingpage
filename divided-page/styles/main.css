@@ -133,6 +133,7 @@ input, textarea { font: inherit; }
   gap: 10px;
   border-radius: var(--r-md);
   padding: 14px 22px;
+  border: 1px solid transparent;
   font-weight: 700;
   transition: transform .15s ease, box-shadow .2s ease, background-color .15s ease;
   cursor: pointer;
@@ -150,7 +151,7 @@ input, textarea { font: inherit; }
 .btn--ghost {
   background: transparent;
   color: var(--green);
-  border: 1px solid var(--green);
+  border-color: var(--green);
 }
 .btn--ghost:hover { background: rgba(7, 213, 119, .08); }
 
@@ -1211,9 +1212,23 @@ body.preview > * {
     margin-top: 40px;
   }
   .pipeline__card { max-width: none; }
-  .pipeline__connector { display: none; }         /* flechas horizontales no aplican */
   .pipeline__card-title { min-height: 0; }
   .pipeline__card-media { width: 70%; height: 240px; }
+  /* Flechas en vertical (rotadas 90°) intercaladas entre las tarjetas apiladas */
+  .pipeline__connector {
+    display: block;
+    position: static;
+    width: auto;
+    height: 60px;                /* alto pre-rotación → ancho visual */
+    transform: rotate(90deg);    /* derecha → abajo */
+    margin-inline: auto;
+    object-position: center;
+  }
+  .pipeline__card:nth-of-type(1) { order: 1; }
+  .pipeline__connector--a       { order: 2; }
+  .pipeline__card:nth-of-type(2) { order: 3; }
+  .pipeline__connector--b       { order: 4; }
+  .pipeline__card:nth-of-type(3) { order: 5; }
 
 
   /* ── 05 · Features ── */
@@ -1226,6 +1241,13 @@ body.preview > * {
   .feature-card { padding: 24px; }
   .feature-card--tall { grid-row: auto; }
   .feature-card__icon-grid svg { width: 100%; height: auto; }
+  /* Orden vertical en móvil: Dominio protegido sube antes de IA personalizada
+     (el DOM mantiene el orden del bento de escritorio). */
+  .features__grid .feature-card:nth-of-type(1) { order: 1; } /* Solo pagas por infraestructura */
+  .features__grid .feature-card:nth-of-type(4) { order: 2; } /* Dominio protegido */
+  .features__grid .feature-card:nth-of-type(2) { order: 3; } /* IA personalizada */
+  .features__grid .feature-card:nth-of-type(3) { order: 4; } /* Reuniones Calificadas */
+  .features__grid .feature-card:nth-of-type(5) { order: 5; } /* IA + A/B Testing */
 
 
   /* ── 06 · Process ── */
@@ -1247,15 +1269,22 @@ body.preview > * {
     height: auto !important;
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    gap: 16px;
+    max-width: 280px;          /* par angosto centrado, con aire a los lados */
+    margin-inline: auto !important;
     margin-bottom: 24px !important;
   }
-  .market-collage img {
+  /* En móvil el collage muestra SOLO las dos centrales (camiones + paneles)
+     como par vertical; el resto se oculta. */
+  .market-collage img { display: none !important; }
+  .market-collage img[src$="market7.png"],
+  .market-collage img[src$="market8.png"] {
+    display: block !important;
     position: static !important;
     left: auto !important;
     top: auto !important;
     width: 100% !important;
-    height: 130px !important;
+    height: 380px !important;
     border-radius: var(--r-md);
   }
   /* La copy tenía margin-top:-250px para solapar el collage; lo anulamos */
@@ -1281,8 +1310,8 @@ body.preview > * {
   }
   .scaling__bg { display: none; }                 /* fondo absoluto no aplica */
   .scaling__copy p { max-width: none; }
-  .scaling__ctas { flex-direction: column; align-items: stretch; }
-  .scaling__ctas .btn { width: 100%; justify-content: center; }
+  .scaling__ctas { gap: 12px; }
+  .scaling__ctas .btn { flex: 1; justify-content: center; padding-left: 12px; padding-right: 12px; }
   .scaling__notes { flex-wrap: wrap; gap: 12px 20px; }
   .scaling__features { grid-template-columns: 1fr 1fr; max-width: none; }
   .scaling__quote { justify-self: stretch; align-self: auto; }
@@ -1333,5 +1362,6 @@ body.preview > * {
   .h-display   { font-size: 28px; }
   .h-display-2 { font-size: 23px; }
   .scaling__features { grid-template-columns: 1fr; }
-  .market-collage img { height: 110px !important; }
+  .market-collage img[src$="market7.png"],
+  .market-collage img[src$="market8.png"] { height: 340px !important; }
 }
